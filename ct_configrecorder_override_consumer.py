@@ -177,7 +177,7 @@ def lambda_handler(event, context):
                         config_recorder['recordingGroup'].pop('exclusionByResourceTypes')
                         config_recorder['recordingGroup'].pop('recordingStrategy')
                         config_recorder['recordingGroup']['allSupported'] = True
-                        config_recorder['recordingGroup']['includeGlobalResourceTypes'] = True
+                        config_recorder['recordingGroup']['includeGlobalResourceTypes'] = home_region
                 else:
                     # New inclusion-based code
                     logging.info(f'Using INCLUSION strategy')
