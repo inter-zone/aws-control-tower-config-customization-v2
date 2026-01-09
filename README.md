@@ -1,3 +1,18 @@
+## About
+This repository is forked from https://github.com/aws-samples/aws-control-tower-config-customization.
+
+## How to use
+### Create Zip
+- ct_configrecorder_override_consumer.py: zip as standalone file
+- ct_configrecorder_override_producer.py: zip together with cfnresponse.py
+
+## fixed
+- Exclude global resource records except for home regions
+
+---
+
+Repository Default Doc
+
 ## Customize AWS Config resource tracking in AWS Control Tower environment
 This github repository is part of AWS blog post https://aws.amazon.com/blogs/mt/customize-aws-config-resource-tracking-in-aws-control-tower-environment/
 
